@@ -5,6 +5,12 @@ It adds Dart support to generate an http client code.
 # Installing
 [![Youtube](https://img.shields.io/badge/Youtube-how%20to%20install%20it%20%3F-red)](https://twitter.com/babstrap)
 
+# LICENCE
+This Paw Extension is released under the [MIT License](LICENSE). Feel free to fork, and modify!
+
+Copyright © 2022 Babacar NDONG.
+
+
 # Ingredient
 - JavasCript
 - Mustache JS - https://github.com/janl/mustache.js
