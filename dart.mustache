@@ -7,7 +7,7 @@ send_request() async {
     var url = "{{{request.url}}}";
     
     // Create request
-    var request = http.Request({{{request.method}}}, Uri.parse(url));
+    var request = http.Request('{{{request.method}}}', Uri.parse(url));
 
     {{#headers.has_headers}}
     // Add headers
