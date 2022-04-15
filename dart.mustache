@@ -1,0 +1,64 @@
+
+// {{{request.name}}} ({{{request.method}}})
+send_request() async {
+
+    var url = "{{{request.url}}}";
+    
+    // Create request
+    var request = http.Request({{{request.method}}}, Uri.parse(url));
+
+    {{#headers.has_headers}}
+    // Add headers
+    headers={
+        {{#headers.header_list}}
+        "{{{header_name}}}": "{{{header_value}}}",
+        {{/headers.header_list}}
+    },
+    request.headers.addAll(headers);
+    {{/headers.has_headers}}
+
+    {{#body.has_json_body}}
+    // Set body
+    request.body = json.encode({{{body.json_body_object}}});
+    {{/body.has_json_body}}
+    
+    {{#body.has_raw_body}}
+    // Set body
+    request.body = json.encode({{{body.json_body_object}}});
+    {{/body.has_raw_body}}
+
+    {{#body.has_long_body}}
+    // Set body
+    data=""  # set your body string
+    {{/body.has_long_body}}
+
+    {{#body.has_url_encoded_body}}
+    // Set body
+    request.bodyFields = {
+    {{#body.url_encoded_body}}
+    "{{{name}}}": "{{{value}}}",
+    {{/body.url_encoded_body}},
+    };
+    {{/body.has_url_encoded_body}}
+
+    {{#body.has_multipart_body}}
+    // Set body
+    files={
+    {{#body.multipart_body}}
+        "{{{name}}}": "{{{value}}}",
+    {{/body.multipart_body}}
+    },
+    {{/body.has_multipart_body}}
+
+    // Fetch Request
+    http.StreamedResponse response = await request.send();
+
+    if (response.statusCode == 200) {
+        debugPrint(await response.stream.bytesToString());
+    }
+    else {
+        debugPrint(response.reasonPhrase);
+    }
+}
+
+// Made by BABACAR NDONG - @Babstrap
