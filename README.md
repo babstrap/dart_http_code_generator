@@ -14,6 +14,7 @@ Copyright © 2022 Babacar NDONG.
 # Ingredient
 - JavasCript
 - Mustache JS - https://github.com/janl/mustache.js
+- CoffeeScript - https://coffeescript.org
 
 # Author
 _Babacar NDONG_
