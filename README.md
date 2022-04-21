@@ -6,7 +6,7 @@ It adds Dart support to generate an http client code.
 [![Youtube](https://img.shields.io/badge/Youtube-how%20to%20install%20it%20%3F-red)](#)
 
 # LICENCE
-This Paw Extension is released under the [MIT License](LICENSE). Feel free to fork, and modify!
+This Paw Extension is released under the [MIT License](https://github.com/babstrap/dart_http_code_generator/blob/main/LICENCE). Feel free to fork, and modify!
 
 Copyright © 2022 Babacar NDONG.
 
