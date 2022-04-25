@@ -155,7 +155,7 @@
     };
   };
 
-  DartHTTPCodeGenerator.identifier = "com.babstrap.DartHTTPCodeGenerator";
+  DartHTTPCodeGenerator.identifier = "sn.babstrap.PawExtensions.dartHTTPCodeGenerator";
   DartHTTPCodeGenerator.title = "Dart (HTTP)";
   DartHTTPCodeGenerator.fileExtension = "dart";
   DartHTTPCodeGenerator.languageHighlighter = "java";
