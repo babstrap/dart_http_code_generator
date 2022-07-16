@@ -2,8 +2,8 @@
 This package is for Paw cloud.
 It adds Dart support to generate an http client code.
 
-# Installing
-[![Youtube](https://img.shields.io/badge/Youtube-how%20to%20install%20it%20%3F-red)](#)
+# How to Install
+[![Youtube](https://img.shields.io/badge/Youtube-how%20to%20install%20it%20%3F-red)](#) [![PawCoud](https://img.shields.io/badge/PawCloud-DartHTTPCodeGenerator-blue)](https://paw.cloud/extensions/DartHTTPCodeGenerator)
 
 # LICENCE
 This Paw Extension is released under the [MIT License](https://github.com/babstrap/dart_http_code_generator/blob/main/LICENCE). Feel free to fork, and modify!
